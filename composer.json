@@ -1,0 +1,18 @@
+{
+    "name": "commentar/dummy-storage",
+    "description": "Dummy data provider for the Commentar commenting system",
+    "keywords": ["comments", "commentar", "data", "dummy", "fake"],
+    "homepage": "https://github.com/Commentar/DummyStorage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pieter Hordijk",
+            "email": "info@pieterhordijk.com",
+            "homepage": "https://pieterhordijk.com",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    }
+}
