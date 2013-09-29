@@ -55,7 +55,7 @@ class User implements UserMappable
             ],
             3 => [
                 'id'           => 3,
-                'username'     => 'Troll',
+                'username'     => 'Troll | <script>alert("xss");</script>\' or 1=1--\r\nHeader: Injection',
                 'password'     => 'xxx',
                 'email'        => 'troll@example.com',
                 'isHellbanned' => false,
