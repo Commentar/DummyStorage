@@ -106,7 +106,7 @@ class User implements UserMappable
             ],
         ];
 
-        if (!array_key_exists(strtolower($username), $users)) {
+        if (!array_key_exists(strtolower($user->getUsername()), $users)) {
             return null;
         }
 
