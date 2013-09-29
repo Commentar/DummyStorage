@@ -16,6 +16,7 @@ namespace Commentar\Storage\Dummy;
 
 use Commentar\Storage\Datamapper\CommentMappable;
 use Commentar\DomainObject\Comment as CommentDomainObject;
+use Commentar\Storage\InvalidStorageException;
 
 /**
  * Comment storage for the dummy storage mechanism
@@ -45,6 +46,12 @@ class Comment implements CommentMappable
      */
     public function fetchByPostId($id)
     {
+        if ($id != 1) {
+            throw new InvalidStorageException(
+                'Could not access the comment storage file (`' . $storageLocation . '`)'
+            );
+        }
+
         return [
             1 => [
                 'id' => 1,
