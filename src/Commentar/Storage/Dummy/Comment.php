@@ -62,7 +62,7 @@ class Comment implements CommentMappable
                 'timestamp' => new \DateTime('@0'),
                 'updated' => new \DateTime(),
                 'score' => mt_rand(-50, 100),
-                'isReview' => true,
+                'isReviewed' => true,
                 'isModerated' => false,
             ],
             2 => [
@@ -74,7 +74,7 @@ class Comment implements CommentMappable
                 'timestamp' => new \DateTime('2013-09-21 00:00:00'),
                 'updated' => null,
                 'score' => mt_rand(-50, 100),
-                'isReview' => true,
+                'isReviewed' => true,
                 'isModerated' => false,
             ],
             3 => [
@@ -86,7 +86,7 @@ class Comment implements CommentMappable
                 'timestamp' => new \DateTime('2013-09-22 12:12:12'),
                 'updated' => null,
                 'score' => mt_rand(-50, 100),
-                'isReview' => true,
+                'isReviewed' => true,
                 'isModerated' => false,
             ],
             4 => [
@@ -98,7 +98,7 @@ class Comment implements CommentMappable
                 'timestamp' => new \DateTime('2013-09-22 13:13:13'),
                 'updated' => null,
                 'score' => mt_rand(-50, 100),
-                'isReview' => true,
+                'isReviewed' => true,
                 'isModerated' => false,
             ],
             5 => [
@@ -110,7 +110,7 @@ class Comment implements CommentMappable
                 'timestamp' => new \DateTime('2013-09-28 13:13:13'),
                 'updated' => null,
                 'score' => mt_rand(-50, 100),
-                'isReview' => true,
+                'isReviewed' => true,
                 'isModerated' => false,
             ],
         ];
