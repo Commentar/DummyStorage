@@ -63,7 +63,7 @@ class User implements UserMappable
             ],
         ];
 
-        if (!array_key_exists($users, $id)) {
+        if (!array_key_exists($id, $users)) {
             return null;
         }
 
@@ -106,7 +106,7 @@ class User implements UserMappable
             ],
         ];
 
-        if (!array_key_exists($users, strtolower($username))) {
+        if (!array_key_exists(strtolower($username), $users)) {
             return null;
         }
 
