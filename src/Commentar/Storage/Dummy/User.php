@@ -110,7 +110,7 @@ class User implements UserMappable
             return null;
         }
 
-        $userData = $users[strtolower($id)];
+        $userData = $users[strtolower($user->getUserName())];
 
         $user->fill($userData);
     }

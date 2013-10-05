@@ -38,6 +38,29 @@ class Comment implements CommentMappable
     }
 
     /**
+     * Fetches a comment by its id
+     *
+     * @param \Commentar\DomainObject\Comment $comment The comment to delete
+     *
+     * return array Information of the comment
+     */
+    public function fetchById(CommentDomainObject $comment)
+    {
+        return [
+            'id' => 1,
+            'postId' => 1,
+            'userId' => 1,
+            'parent' => null,
+            'content' => 'First post! Yeah from the UNIX epoch try to beat this!',
+            'timestamp' => new \DateTime('@0'),
+            'updated' => new \DateTime(),
+            'score' => mt_rand(-50, 100),
+            'isReviewed' => true,
+            'isModerated' => false,
+        ];
+    }
+
+    /**
      * Fetches all comments based on the post id
      *
      * @param mixed $postId The id of the post of which to fetch the comments
@@ -114,6 +137,15 @@ class Comment implements CommentMappable
                 'isModerated' => false,
             ],
         ];
+    }
+
+    /**
+     * Deletes a comment
+     *
+     * @param \Commentar\DomainObject\Comment $comment The comment to delete
+     */
+    public function delete(CommentDomainObject $comment)
+    {
     }
 
     /**
